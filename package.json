@@ -1,0 +1,19 @@
+{
+  "name": "vassmolosa",
+  "version": "1.0.0",
+  "description": "Project for creating a web site for the local community in Vassmolösa, Kalmar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFSvensson/Vassmolosa.git"
+  },
+  "author": "SvenssonOm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JFSvensson/Vassmolosa/issues"
+  },
+  "homepage": "https://github.com/JFSvensson/Vassmolosa#readme"
+}
