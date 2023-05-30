@@ -2,8 +2,11 @@
   "name": "vassmolosa",
   "version": "1.0.0",
   "description": "Project for creating a web site for the local community in Vassmolösa, Kalmar.",
-  "main": "index.js",
+  "type": "module",
+  "browser": "src/js/index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "test": "test"
   },
   "repository": {
@@ -11,9 +14,15 @@
     "url": "git+https://github.com/JFSvensson/Vassmolosa.git"
   },
   "author": "SvenssonOm",
-  "license": "ISC",
+  "contributors": [
+    "Fredrik Svensson <svensson@svenssonom.se>"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JFSvensson/Vassmolosa/issues"
   },
-  "homepage": "https://github.com/JFSvensson/Vassmolosa#readme"
+  "homepage": "https://github.com/JFSvensson/Vassmolosa#readme",
+  "dependencies": {
+    "vite": "^4.3.9"
+  }
 }
