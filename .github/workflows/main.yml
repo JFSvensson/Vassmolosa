@@ -10,18 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Install rsync
-      run: |
-        sudo apt-get update
-        sudo apt-get install rsync
     - name: Checkout code
       uses: actions/checkout@v3
+    
     - name: Install Node.js
       uses: actions/setup-node@v3
       with: 
           node-version: '16.x'
+    
     - name: Install npm dependencies
       run: npm install
+
     - name: Run build task
       run: npm run build --if-present
       
@@ -34,24 +33,3 @@ jobs:
         port: ${{ secrets.REMOTE_PORT }}
         user: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-    
-      
-      
-      
-#     - name: Deploy to Server
-#       uses: easingthemes/ssh-deploy@main
-#       env:
-#           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-#           ARGS: "-rlgoDzvc -i --delete"
-#           SOURCE: "src/"
-#           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-#           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-#           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-#           TARGET: ${{ secrets.REMOTE_TARGET }}
-#           SCRIPT_BEFORE: |
-#             whoami
-#             ls -al
-#           SCRIPT_AFTER: |
-#             whoami
-#             ls -al
-#             echo $RSYNC_STDOUT
