@@ -1,7 +1,7 @@
 /**
  * The svenssonom-welcome web component module.
  *
- * @author Fredrik Svensson <svensson@svenssonom.se
+ * @author Fredrik Svensson <svensson@svenssonom.se>
  * @version 1.0.0
  */
 
