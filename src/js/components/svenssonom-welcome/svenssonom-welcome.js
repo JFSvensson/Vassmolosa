@@ -15,6 +15,7 @@ template.innerHTML = `
   </style>
   <div class ="welcome-board">
     <h1>Välkommen - här kommer det snart mer innehåll.</h1>
+    <h2>Detta är en webbkomponent som är skapad med hjälp av Javascript, HTML och CSS.</h2>
   </div>
 `
 
